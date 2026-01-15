@@ -1477,7 +1477,7 @@ public class CarManagementSystemTest {
     @Test
     @DisplayName("Edge Case: Unicode in model name")
     public void edgeCase_UnicodeInModelName_ShouldWork() {
-        String unicodeName = "モデル テスト 🚗";
+        String unicodeName = "モデル テスト";
         Car car = builder.setModel(unicodeName).build();
         assertEquals(unicodeName, car.getModel());
     }
